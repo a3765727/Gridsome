@@ -3,6 +3,10 @@
     {
       "source": "/uploads/:match*",
       "destination": "http://106.75.87.235:1337/uploads/:match*"
+    },
+    {
+      "source": "/backend/(.*)",
+      "destination": "/api/proxy"
     }
   ]
 }
