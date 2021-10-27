@@ -46,7 +46,7 @@ export default {
       match && match.forEach(item => {
         let path = item.match(/\(.*?\.jpg\)/g)[0]
         path = path.replace(/\(|\)/g, '')
-        let img = `<img src="${this.GRIDSOME_API_URL}${path}" style="width: 100%;"/>`
+        let img = `<img src="${path}" style="width: 100%;"/>`
         str = str.replace(item, img)
       })
       return str

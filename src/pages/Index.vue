@@ -20,7 +20,7 @@
           >
             <img
               alt="Banana"
-              :src="`${GRIDSOME_API_URL}${project.node.cover.url}`"
+              :src="`${project.node.cover.url}`"
               width="2560"
               class="thumbnail g-image g-image--lazy g-image--loaded"
             />

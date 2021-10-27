@@ -8,10 +8,6 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
-  head.meta.push({
-    'http-equiv': 'Content-Security-Policy',
-    content: 'upgrade-insecure-requests'
-  })
   Vue.mixin({
     data() {
       return {
